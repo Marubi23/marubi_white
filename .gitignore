@@ -1,0 +1,43 @@
+# Create .gitignore file
+cat > .gitignore << 'EOF'
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Temporary files
+~$*
+*.tmp
+*.temp
+
+# VS Code
+.vscode/
+
+# OS files
+ntuser.*
+NTUSER.*
+*.regtrans-ms
+*.blf
+*.LOG*
+
+# User directories
+AppData/
+Contacts/
+Downloads/
+Favorites/
+Links/
+Music/
+Pictures/
+Saved Games/
+Searches/
+Videos/
+
+# Development
+node_modules/
+.env
+.env.local
+EOF
+
+# Add .gitignore
+git add .gitignore

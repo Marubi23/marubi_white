@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Journey | Felix Marubi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span class="logo-text">marubyte</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="childhood.html" class="nav-link">
+                    <i class="fas fa-child nav-icon"></i>
+                    <span class="nav-text">Childhood</span>
+                </a>
+                <a href="education.html" class="nav-link active">
+                    <i class="fas fa-graduation-cap nav-icon"></i>
+                    <span class="nav-text">Education</span>
+                </a>
+                <a href="skills.html" class="nav-link">
+                    <i class="fas fa-tools nav-icon"></i>
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a href="aspirations.html" class="nav-link">
+                    <i class="fas fa-rocket nav-icon"></i>
+                    <span class="nav-text">Aspirations</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <span class="nav-text">Contact</span>
+                </a>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle mobile" id="mobileThemeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="childhood.html" class="mobile-nav-link">
+                    <i class="fas fa-child"></i>
+                    <span>Childhood</span>
+                </a>
+                <a href="education.html" class="mobile-nav-link active">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="skills.html" class="mobile-nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="aspirations.html" class="mobile-nav-link">
+                    <i class="fas fa-rocket"></i>
+                    <span>Aspirations</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </nav>
+
+    <!-- Education Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Education & Practical Learning</h1>
+            <p class="page-subtitle">From self-taught beginnings to university-level engineering and building real companies</p>
+        </div>
+    </section>
+
+    <!-- Current Education -->
+    <section class="section current-education">
+        <div class="container">
+            <div class="education-card reveal">
+                <div class="education-header">
+                    <div class="uni-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="education-info">
+                        <h2>Kirinyaga University</h2>
+                        <p class="degree">Bachelor of Science in Software Engineering</p>
+                        <p class="duration">2024 - Present (2nd Year Student)</p>
+                        <div class="education-stats">
+                            <span class="stat-badge">
+                                <i class="fas fa-star"></i>
+                                Focus: Full-Stack Development
+                            </span>
+                            <span class="stat-badge">
+                                <i class="fas fa-calendar"></i>
+                                Expected Graduation: 2028
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-details">
+                    <div class="details-grid">
+                        <div class="detail-card reveal">
+                            <div class="detail-icon">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <h4>Background</h4>
+                            <p>Self-taught developer before university, with skills applied to real projects.</p>
+                        </div>
+                        
+                        <div class="detail-card reveal">
+                            <div class="detail-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h4>Practical Focus</h4>
+                            <p>Applying coursework directly to building e-commerce sites and hackathon projects.</p>
+                        </div>
+                        
+                        <div class="detail-card reveal">
+                            <div class="detail-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h4>Real-World Builds</h4>
+                            <p>Created mind-bridge.co.ke and other ventures alongside studies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="section courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Academic & Self-Taught Learning</h2>
+                <p class="section-subtitle">University curriculum supplemented by hands-on, project-based learning</p>
+            </div>
+            
+            <div class="courses-grid">
+                <div class="course-category reveal">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Core Development</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>Object-Oriented Programming</li>
+                        <li>Web Development & Design</li>
+                        <li>Database Management Systems</li>
+                        <li>Software Engineering Principles</li>
+                        <li>Data Structures</li>
+                    </ul>
+                </div>
+                
+                <div class="course-category reveal">
+                    <div class="category-header">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Practical Application</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>E-Commerce Website Development</li>
+                        <li>Full-Stack Project Building</li>
+                        <li>Hackathon Challenge Preparation</li>
+                        <li>Entrepreneurial Tech Projects</li>
+                        <li>Real-World Problem Solving</li>
+                    </ul>
+                </div>
+                
+                <div class="course-category reveal">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Systems & Infrastructure</h3>
+                    </div>
+                    <ul class="course-list">
+                        <li>Computer Networks</li>
+                        <li>Systems Analysis & Design</li>
+                        <li>Cybersecurity Fundamentals</li>
+                        <li>Cloud Computing Basics</li>
+                        <li>Mobile Computing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Projects -->
+    <section class="section academic-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects & Competition Work</h2>
+                <p class="section-subtitle">Where theory meets practice: from university assignments to hackathon challenges</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="academic-project reveal">
+                    <div class="project-header">
+                        <h3>University-Level E-Commerce Websites</h3>
+                        <span class="project-grade">Real-World Build</span>
+                    </div>
+                    <p class="project-description">Built functional e-commerce websites as part of university projects and freelance work, applying full-stack development skills to create practical business solutions.</p>
+                    <div class="project-tech">
+                        <span>Full-Stack</span>
+                        <span>Payment Integration</span>
+                        <span>Database Design</span>
+                    </div>
+                </div>
+                
+                <div class="academic-project reveal">
+                    <div class="project-header">
+                        <h3>Wangari Maathai Inaugural Hackathon</h3>
+                        <span class="project-grade">Competition Project</span>
+                    </div>
+                    <p class="project-description">Participated in competitive hackathon challenges, developing innovative solutions under time constraints and collaborating with other developers to solve complex problems.</p>
+                    <div class="project-tech">
+                        <span>Team Collaboration</span>
+                        <span>Rapid Prototyping</span>
+                        <span>Solution Design</span>
+                    </div>
+                </div>
+                
+                <div class="academic-project reveal">
+                    <div class="project-header">
+                        <h3>mind-bridge.co.ke Venture</h3>
+                        <span class="project-grade">Entrepreneurial Project</span>
+                    </div>
+                    <p class="project-description">Applied self-taught and university skills to build a functional company website and platform, turning academic knowledge into a real business venture.</p>
+                    <div class="project-tech">
+                        <span>Business Development</span>
+                        <span>Web Platform</span>
+                        <span>Technical Implementation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular -->
+    <section class="section extracurricular">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Beyond Classroom</h2>
+                <p class="section-subtitle">Self-directed learning and community participation</p>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card reveal">
+                    <div class="activity-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Self-Taught Development</h3>
+                    <p class="activity-role">Independent Learner</p>
+                    <p>Began learning programming independently before university, building foundational skills through online resources and practical experimentation.</p>
+                </div>
+                
+                <div class="activity-card reveal">
+                    <div class="activity-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hackathon Participation</h3>
+                    <p class="activity-role">Competitor & Builder</p>
+                    <p>Active participation in hackathons like the Wangari Maathai Inaugural challenge, applying skills in competitive, timed environments.</p>
+                </div>
+                
+                <div class="activity-card reveal">
+                    <div class="activity-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Entrepreneurial Projects</h3>
+                    <p class="activity-role">Founder & Developer</p>
+                    <p>Building real companies and websites like mind-bridge.co.ke alongside academic studies, bridging theory with entrepreneurial execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>marubyte</span>
+                    </a>
+                    <p class="footer-description">
+                        Software Engineering student blending academic learning with self-taught skills and real-world projects.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:felixmarubi2005@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="childhood.html"><i class="fas fa-chevron-right"></i> Childhood</a></li>
+                        <li><a href="education.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <li><a href="skills.html"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="aspirations.html"><i class="fas fa-chevron-right"></i> Aspirations</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Education</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Kirinyaga University</strong>
+                                <span>B.Sc. Software Engineering</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kutus, Kirinyaga</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Year</strong>
+                                <span>2nd Year</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:felixmarubi2005@gmail.com">felixmarubi2005@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+254712683708">+254 712 683 708</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Based In</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 marubyte. All rights reserved.</p>
+                    <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in Kenya</p>
+                </div>
+                
+                <div class="footer-extra">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

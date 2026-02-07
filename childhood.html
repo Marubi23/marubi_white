@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childhood Journey | Felix Marubi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span class="logo-text">marubyte</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="childhood.html" class="nav-link active">
+                    <i class="fas fa-child nav-icon"></i>
+                    <span class="nav-text">Childhood</span>
+                </a>
+                <a href="education.html" class="nav-link">
+                    <i class="fas fa-graduation-cap nav-icon"></i>
+                    <span class="nav-text">Education</span>
+                </a>
+                <a href="skills.html" class="nav-link">
+                    <i class="fas fa-tools nav-icon"></i>
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a href="aspirations.html" class="nav-link">
+                    <i class="fas fa-rocket nav-icon"></i>
+                    <span class="nav-text">Aspirations</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <span class="nav-text">Contact</span>
+                </a>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle mobile" id="mobileThemeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="childhood.html" class="mobile-nav-link active">
+                    <i class="fas fa-child"></i>
+                    <span>Childhood</span>
+                </a>
+                <a href="education.html" class="mobile-nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="skills.html" class="mobile-nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="aspirations.html" class="mobile-nav-link">
+                    <i class="fas fa-rocket"></i>
+                    <span>Aspirations</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </nav>
+
+    <!-- Childhood Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Growing Up in Nairobi</h1>
+            <p class="page-subtitle">Where curiosity met code and a builder was born</p>
+        </div>
+    </section>
+
+    <!-- Family Roots -->
+    <section class="section family-roots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nairobi Foundations</h2>
+                <p class="section-subtitle">A standard family, big questions, and the spark of technology</p>
+            </div>
+            
+            <div class="family-grid">
+                <div class="family-card reveal">
+                    <div class="family-image">
+                        <!-- Replace with actual image -->
+                        <img src="images/childhood.jpeg" alt="Family in Nairobi" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 300\"><rect width=\"400\" height=\"300\" fill=\"%23e8f6f3\"/><rect x=\"50\" y=\"50\" width=\"300\" height=\"200\" fill=\"%2327ae60\" opacity=\"0.2\"/><circle cx=\"200\" cy=\"150\" r=\"60\" fill=\"%233498db\"/><text x=\"200\" y=\"155\" text-anchor=\"middle\" fill=\"white\" font-family=\"Arial\" font-size=\"18\">NBO</text></svg>'">
+                    </div>
+                    <div class="family-content">
+                        <h3>The Nairobi Chapter</h3>
+                        <p>I grew up in Nairobi with a standard family setup. From an early age, I found myself questioning existence and pondering how things worked—a curiosity that would soon find its focus. Everything changed at age 7 when I first interacted with a laptop.</p>
+                        <div class="family-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>First Computer at 7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Early Influences -->
+    <section class="section influences">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The First Spark</h2>
+                <p class="section-subtitle">From games to engineering curiosity</p>
+            </div>
+            
+            <div class="influences-grid">
+                <div class="influence-card reveal">
+                    <div class="influence-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Computer Games & Wonder</h3>
+                    <p>My first interaction with a laptop at age 7 wasn't just about playing games—it was about wondering how they were engineered. While others just played, I was already asking how it all worked behind the screen.</p>
+                </div>
+                
+                <div class="influence-card reveal">
+                    <div class="influence-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>The Self-Taught Journey</h3>
+                    <p>With no formal guidance at first, I began teaching myself. I'd take apart concepts, rebuild them in my mind, and slowly piece together the logic that makes technology tick. This self-driven learning became my foundation.</p>
+                </div>
+                
+                <div class="influence-card reveal">
+                    <div class="influence-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>From Curiosity to Creation</h3>
+                    <p>That early wonder didn't stay abstract. It pushed me to start building real things. What began with questions about game mechanics evolved into creating actual websites and applications that solved problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Childhood Timeline -->
+    <section class="section timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Build Timeline</h2>
+                <p class="section-subtitle">From first questions to first companies</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-year">Age 7</div>
+                    <div class="timeline-content">
+                        <h3>First Laptop Encounter</h3>
+                        <p>First interacted with a laptop, playing computer games but more fascinated by how they were engineered than by playing them.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-year">Early Teens</div>
+                    <div class="timeline-content">
+                        <h3>The Self-Teaching Begins</h3>
+                        <p>Started self-teaching programming and development skills through online resources, books, and sheer experimentation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-year">Before University</div>
+                    <div class="timeline-content">
+                        <h3>First Ventures</h3>
+                        <p>Applied self-taught skills to build initial projects and lay the groundwork for future entrepreneurial efforts.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-year">University Level</div>
+                    <div class="timeline-content">
+                        <h3>Building & Competing</h3>
+                        <p>Created e-commerce websites and participated in hackathon challenges like the Wangari Maathai Inaugural Hackathon, testing skills in real-world scenarios.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal">
+                    <div class="timeline-year">Now</div>
+                    <div class="timeline-content">
+                        <h3>MindBridge & Beyond</h3>
+                        <p>Used accumulated skills to build companies like mind-bridge.co.ke, turning childhood curiosity into professional solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Lessons -->
+    <section class="section lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Builder's Mindset</h2>
+                <p class="section-subtitle">Principles forged from a self-taught journey</p>
+            </div>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card reveal">
+                    <div class="lesson-number">01</div>
+                    <h3>Question Everything</h3>
+                    <p>Starting with questioning my own existence, then how games worked, then how to build solutions—this relentless curiosity is what drives learning.</p>
+                </div>
+                
+                <div class="lesson-card reveal">
+                    <div class="lesson-number">02</div>
+                    <h3>Self-Reliance in Learning</h3>
+                    <p>When resources or teachers aren't available, you become your own best teacher. This self-taught foundation builds unparalleled problem-solving skills.</p>
+                </div>
+                
+                <div class="lesson-card reveal">
+                    <div class="lesson-number">03</div>
+                    <h3>Build to Understand</h3>
+                    <p>You don't truly understand something until you build it. From e-commerce sites to hackathon projects, each build deepens the mastery.</p>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="skills.html" class="btn-primary">
+                    <i class="fas fa-tools"></i>
+                    See the Skills This Journey Built
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>marubyte</span>
+                    </a>
+                    <p class="footer-description">
+                        Software Engineering student who started by wondering how games worked, now building solutions for real problems.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:felixmarubi2005@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="childhood.html"><i class="fas fa-chevron-right"></i> Childhood</a></li>
+                        <li><a href="education.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <li><a href="skills.html"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="aspirations.html"><i class="fas fa-chevron-right"></i> Aspirations</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Education</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Kirinyaga University</strong>
+                                <span>B.Sc. Software Engineering</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kutus, Kirinyaga</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Year</strong>
+                                <span>2nd Year</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:felixmarubi2005@gmail.com">felixmarubi2005@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+254712683708">+254 712 683 708</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Roots In</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 marubyte. All rights reserved.</p>
+                    <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in Kenya</p>
+                </div>
+                
+                <div class="footer-extra">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

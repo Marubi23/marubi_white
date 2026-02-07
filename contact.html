@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Felix Marubi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span class="logo-text">marubyte</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="childhood.html" class="nav-link">
+                    <i class="fas fa-child nav-icon"></i>
+                    <span class="nav-text">Childhood</span>
+                </a>
+                <a href="education.html" class="nav-link">
+                    <i class="fas fa-graduation-cap nav-icon"></i>
+                    <span class="nav-text">Education</span>
+                </a>
+                <a href="skills.html" class="nav-link">
+                    <i class="fas fa-tools nav-icon"></i>
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a href="aspirations.html" class="nav-link">
+                    <i class="fas fa-rocket nav-icon"></i>
+                    <span class="nav-text">Aspirations</span>
+                </a>
+                <a href="contact.html" class="nav-link active">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <span class="nav-text">Contact</span>
+                </a>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle mobile" id="mobileThemeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="childhood.html" class="mobile-nav-link">
+                    <i class="fas fa-child"></i>
+                    <span>Childhood</span>
+                </a>
+                <a href="education.html" class="mobile-nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="skills.html" class="mobile-nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="aspirations.html" class="mobile-nav-link">
+                    <i class="fas fa-rocket"></i>
+                    <span>Aspirations</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link active">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Let's Connect</h1>
+            <p class="page-subtitle">I'm open to discussing tech, opportunities, and building things together</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="section contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <div class="section-header text-left">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-subtitle">Multiple ways to reach out and connect</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method reveal">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Email</h3>
+                                <a href="mailto:felixmarubi2005@gmail.com" class="contact-link">felixmarubi2005@gmail.com</a>
+                                <p class="method-hint">I typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method reveal">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Phone/WhatsApp</h3>
+                                <a href="tel:+254712683708" class="contact-link">+254 712 683 708</a>
+                                <p class="method-hint">Available: Mon-Fri, 9 AM - 5 PM EAT</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method reveal">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Location</h3>
+                                <span class="contact-link">Nairobi, Kenya</span>
+                                <p class="method-hint">Open to remote opportunities and collaborations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact reveal">
+                        <h3>Connect Socially</h3>
+                        <div class="social-buttons">
+                            <a href="https://linkedin.com/in/felixmarubi" class="social-btn linkedin" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/felixmarubi" class="social-btn github" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://twitter.com/felixmarubi" class="social-btn twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section reveal">
+                    <div class="section-header text-left">
+                        <h2 class="section-title">Send a Message</h2>
+                        <p class="section-subtitle">I'd love to hear from you</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Your Name *
+                            </label>
+                            <input type="text" id="name" name="name" required 
+                                   placeholder="Enter your full name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    <i class="fas fa-envelope"></i> Email Address *
+                                </label>
+                                <input type="email" id="email" name="email" required 
+                                       placeholder="you@example.com">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    <i class="fas fa-phone"></i> Phone Number
+                                </label>
+                                <input type="tel" id="phone" name="phone" 
+                                       placeholder="+254 XXX XXX XXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Subject *
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="opportunity">Opportunity</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="security">Cybersecurity Discussion</option>
+                                <option value="freelance">Freelance Work</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Your Message *
+                            </label>
+                            <textarea id="message" name="message" rows="5" required 
+                                      placeholder="Tell me what's on your mind..."></textarea>
+                            <div class="char-count">
+                                <span id="charCount">0</span> / 1000 characters
+                            </div>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">
+                                Subscribe to my occasional tech updates
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        
+                        <div class="form-success" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Message Sent Successfully!</h4>
+                                <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download -->
+    <section class="section resume-section">
+        <div class="container">
+            <div class="resume-card reveal">
+                <div class="resume-content">
+                    <h2>Download My Resume</h2>
+                    <p>Get a comprehensive overview of my skills, experience, and academic achievements in PDF format.</p>
+                    <div class="resume-actions">
+                        <a href="assets/resume.pdf" class="btn-primary" download>
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                        <a href="assets/resume.pdf" class="btn-secondary" target="_blank">
+                            <i class="fas fa-eye"></i>
+                            Preview Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="resume-stats">
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2<sup>nd</sup></div>
+                        <div class="stat-label">Year Student</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>Are you available for internships or freelance work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, I'm actively seeking internship opportunities in software development and cybersecurity. I also take on select freelance projects that align with my skills. Feel free to reach out with details about the opportunity.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>What kinds of projects do you work on?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I focus on full-stack web development, e-commerce sites, and have a growing interest in cybersecurity applications. I've built projects like mind-bridge.co.ke and participated in hackathons like the Wangari Maathai Inaugural challenge.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>What's your current focus of study?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I'm a 2nd-year Software Engineering student at Kirinyaga University, with a particular interest in cybersecurity. I'm building skills in both full-stack development and security fundamentals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <h3>What's your preferred way to collaborate?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>I'm comfortable with GitHub for code collaboration, and tools like Slack or email for communication. I enjoy hackathons, collaborative coding sessions, and discussing tech solutions for real-world problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Location -->
+    <section class="section location-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Location</h2>
+                <p class="section-subtitle">Based in Kenya's tech hub and studying in Kirinyaga</p>
+            </div>
+            
+            <div class="location-card reveal">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Nairobi & Kirinyaga, Kenya</h3>
+                    <p>Growing up in Nairobi, studying at Kirinyaga University in Kutus</p>
+                    <div class="location-details">
+                        <p><i class="fas fa-clock"></i> Timezone: East Africa Time (GMT+3)</p>
+                        <p><i class="fas fa-language"></i> Languages: English, Swahili</p>
+                        <p><i class="fas fa-university"></i> University: Kirinyaga University (Kutus Campus)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability -->
+    <section class="section availability">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Availability</h2>
+                <p class="section-subtitle">When and how to reach me</p>
+            </div>
+            
+            <div class="availability-grid">
+                <div class="availability-item reveal">
+                    <div class="availability-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Meeting Schedule</h3>
+                    <p>Available for virtual meetings Monday-Friday, balancing university schedule</p>
+                </div>
+                
+                <div class="availability-item reveal">
+                    <div class="availability-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h3>Response Time</h3>
+                    <p>Emails: Within 24 hours<br>LinkedIn: Within 48 hours<br>WhatsApp: For established contacts</p>
+                </div>
+                
+                <div class="availability-item reveal">
+                    <div class="availability-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Best Contact Method</h3>
+                    <p>Email for formal inquiries<br>LinkedIn for professional networking<br>Social media for general discussion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>marubyte</span>
+                    </a>
+                    <p class="footer-description">
+                        Software Engineering student with a focus on full-stack development and growing cybersecurity expertise.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:felixmarubi2005@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="childhood.html"><i class="fas fa-chevron-right"></i> Childhood</a></li>
+                        <li><a href="education.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <li><a href="skills.html"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="aspirations.html"><i class="fas fa-chevron-right"></i> Aspirations</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Education</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Kirinyaga University</strong>
+                                <span>B.Sc. Software Engineering</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kutus, Kirinyaga</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Year</strong>
+                                <span>2nd Year</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:felixmarubi2005@gmail.com">felixmarubi2005@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+254712683708">+254 712 683 708</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Based In</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 marubyte. All rights reserved.</p>
+                    <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in Kenya</p>
+                </div>
+                
+                <div class="footer-extra">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

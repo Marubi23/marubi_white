@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Marubi | Software Engineering Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-code logo-icon"></i>
+                <span class="logo-text">marubyte</span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="childhood.html" class="nav-link">
+                    <i class="fas fa-child nav-icon"></i>
+                    <span class="nav-text">Childhood</span>
+                </a>
+                <a href="education.html" class="nav-link">
+                    <i class="fas fa-graduation-cap nav-icon"></i>
+                    <span class="nav-text">Education</span>
+                </a>
+                <a href="skills.html" class="nav-link">
+                    <i class="fas fa-tools nav-icon"></i>
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a href="aspirations.html" class="nav-link">
+                    <i class="fas fa-rocket nav-icon"></i>
+                    <span class="nav-text">Aspirations</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    <span class="nav-text">Contact</span>
+                </a>
+                
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle mobile" id="mobileThemeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="childhood.html" class="mobile-nav-link">
+                    <i class="fas fa-child"></i>
+                    <span>Childhood</span>
+                </a>
+                <a href="education.html" class="mobile-nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="skills.html" class="mobile-nav-link">
+                    <i class="fas fa-tools"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="aspirations.html" class="mobile-nav-link">
+                    <i class="fas fa-rocket"></i>
+                    <span>Aspirations</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Progress Bar -->
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Welcome!</span>
+                </div>
+                
+                <!-- Profile Image Section -->
+                <div class="profile-section">
+                    <div class="profile-image-container animate-float">
+                        <div class="profile-image">
+                            <img src="images/profile.jpeg" alt="Felix Marubi - Software Engineering Student" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\"><rect width=\"400\" height=\"400\" fill=\"%23e8f6f3\"/><circle cx=\"200\" cy=\"150\" r=\"80\" fill=\"%232C3E50\"/><circle cx=\"180\" cy=\"130\" r=\"10\" fill=\"white\"/><circle cx=\"220\" cy=\"130\" r=\"10\" fill=\"white\"/><path d=\"M180 200 Q200 220 220 200\" stroke=\"%2327AE60\" stroke-width=\"5\" fill=\"none\"/></svg>'">
+                        </div>
+                        <div class="profile-badge">
+                            <i class="fas fa-laptop-code"></i>
+                            Active FreeLancer
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text Content Section -->
+                <div class="hero-text-content">
+                    <h1 class="hero-title animate-fade-in">
+                        <span class="highlight">Felix Marubi</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-slide-up">
+                        <i class="fas fa-university"></i> Software Engineering Student
+                    </h2>
+                    <p class="hero-location animate-slide-up">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        Kirinyaga University • Kutus, Kirinyaga
+                    </p>
+                    <p class="hero-description animate-slide-up delay-1">
+                        Software Engineering student building full-stack solutions.
+                        Creating technology that works for real people,
+                        with focus on tools that help African communities.
+                    </p>
+                    <div class="hero-buttons animate-slide-up delay-2">
+                        <a href="#about" class="btn-primary">
+                            <i class="fas fa-compass"></i>
+                            Journey my World
+                        </a>
+                        <a href="contact.html" class="btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="hero-stats animate-slide-up delay-3">
+                    <div class="stat-item">
+                        <div class="stat-number">2<sup>nd</sup></div>
+                        <div class="stat-label">Year Student</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Rest of your page remains the same -->
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Story</h2>
+                <p class="section-subtitle">From Nairobi to Kirinyaga University - A journey of passion and purpose</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Nairobi Roots</h3>
+                    <p>Born and raised in Nairobi, the vibrant heart of Kenya.</p>
+                    <a href="childhood.html" class="card-link">
+                        Explore Childhood
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="about-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Current Education</h3>
+                    <p>2nd-year Software Engineering student at Kirinyaga University, specializing in full-stack development and AI technologies.</p>
+                    <a href="education.html" class="card-link">
+                        View Education
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="about-card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Future Vision</h3>
+                    <p>My future vision is to become a cybersecurity specialist while exploring how technology can be developed responsibly to protect and empower communities in emerging tech landscapes.</p>
+                    <a href="aspirations.html" class="card-link">
+                        See Aspirations
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="section skills-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-cloud">
+                <span class="skill-tag primary">JavaScript</span>
+                <span class="skill-tag secondary">React</span>
+                <span class="skill-tag primary">Python</span>
+                <span class="skill-tag secondary">Node.js</span>
+                <span class="skill-tag primary">HTML/CSS</span>
+                <span class="skill-tag secondary">MongoDB</span>
+                <span class="skill-tag primary">Git</span>
+                <span class="skill-tag secondary">Flask</span>
+                <span class="skill-tag primary">UI/UX Design</span>
+                <span class="skill-tag secondary">Responsive Design</span>
+            </div>
+            
+            <div class="text-center">
+                <a href="skills.html" class="btn-outline">
+                    <i class="fas fa-tools"></i>
+                    View All Skills
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Hands-on experience through building</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-badge">Academic Project</div>
+                        <img src="images/projectuno.JPG" alt="Mzuri Organics E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mzuri Organics</h3>
+                        <p>An e-commerce website for selling organic fertilisers.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-angular"></i> Angular</span>
+                            <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-badge">Community Project</div>
+                        <img src="images/marubilabs.JPG" alt="Rubi Labs Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>Rubi Labs</h3>
+                        <p>A social website where I give back to community by providing lessons on cybersecurity and digital safety.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Flutter</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <div class="project-badge">Mental Health Platform</div>
+                        <img src="images/projectduo.JPG" alt="Mindbridge Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>mind-bridge.co.ke</h3>
+                        <p>A platform designed to help children facing mental health challenges to connect with mental health professionals and get the help they need.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-vuejs"></i> Vue.js</span>
+                            <span class="tech-tag"><i class="fas fa-fire"></i> Firebase</span>
+                            <span class="tech-tag"><i class="fas fa-paint-brush"></i> Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="section quote">
+        <div class="container">
+            <div class="quote-card">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="quote-text">
+                    "Security is not just a layer of protection—it's the foundation of trust in our digital age. As a developer, I write code with the awareness that each line can either build a fortress or create a vulnerability, and I choose to build with integrity."
+                </p>
+                <div class="quote-author">
+                    <div class="author-info">
+                        <strong>Felix Marubi</strong>
+                        <span>Software Engineering Student</span>
+                    </div>
+                    <div class="author-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Kirinyaga University, Kenya
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Let's Build Something Amazing</h2>
+                    <p>I'm always open to discussing tech, collaborating on projects, or connecting with fellow developers and mentors.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="assets/resume.pdf" class="btn-outline" download>
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <i class="fas fa-handshake"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>marubyte</span>
+                    </a>
+                    <p class="footer-description">
+                        Software Engineering student building practical solutions for real-world problems.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/felixmarubi" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:felixmarubi2005@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="childhood.html"><i class="fas fa-chevron-right"></i> Childhood</a></li>
+                        <li><a href="education.html"><i class="fas fa-chevron-right"></i> Education</a></li>
+                        <li><a href="skills.html"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="aspirations.html"><i class="fas fa-chevron-right"></i> Aspirations</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Education</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Kirinyaga University</strong>
+                                <span>B.Sc. Software Engineering</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kutus, Kirinyaga</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <strong>Year</strong>
+                                <span>2nd Year (2026)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-info">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:felixmarubi2005@gmail.com">felixmarubi2005@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+254712683708">+254 712 683 708</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Based In</strong>
+                                <span>Nairobi, Kenya</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 marubyte. All rights reserved.</p>
+                    <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in Kenya</p>
+                </div>
+                
+                <div class="footer-extra">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
